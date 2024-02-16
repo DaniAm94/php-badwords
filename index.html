@@ -12,22 +12,26 @@
 </head>
 
 <body>
-    <form action="php/index.php" method="post">
-        <div class="container-sm vh-100 d-flex flex-column  align-items-center justify-content-center  row-gap-5 ">
+    <div class="container-sm vh-100 d-flex flex-column  align-items-center justify-content-center">
+        <form action="php/index.php" method="post">
 
-            <div class="input-group d-flex flex-column ">
-                <label for="par">Inserisci del testo nel paragrafo</label>
-                <textarea name="paragraph" id="par" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel possimus maiores temporibus in veritatis. Sunt beatae magnam quasi cum, necessitatibus earum inventore nam consectetur nobis, qui exercitationem recusandae. Dolorum, eveniet.
+            <div class="input-group d-flex flex-column mb-4">
+                <label for="par" class="h3">Inserisci del testo nel paragrafo</label>
+                <textarea name="paragraph" id="par" cols="30" rows="10">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur suscipit autem minus tempore! Delectus, sapiente ullam eius iste, unde inventore labore aperiam sed nam quos quis cupiditate commodi nesciunt voluptas?
+                    Neque mollitia in laborum, veniam minus doloremque excepturi fugit labore, a ullam tempore ad numquam nulla totam id animi qui magnam sequi libero laboriosam voluptates eveniet quod tenetur. Placeat, repudiandae.
+                    Quae culpa placeat mollitia vel excepturi harum ad eveniet, facilis assumenda nulla nobis neque soluta consectetur corporis doloribus iusto, perspiciatis dolorum magnam, debitis reprehenderit nam? Nobis iste nemo molestiae ipsum.
+                    Exercitationem officia, aliquam earum quas dolores culpa deserunt quam qui ut, nobis nemo adipisci voluptatem temporibus cupiditate velit, itaque deleniti ullam explicabo animi illo aliquid in neque dignissimos officiis? Ipsam!
                 </textarea>
             </div>
-            <div class="input-group ">
-                <label for="word" class="me-3 ">Inserisci una parola</label>
-                <input id="word" name="word" type="text">
+            <div class="input-group d-flex  flex-column mb-4 ">
+                <label for="word" class="me-3 h3">Scegli una parola da censurare</label>
+                <input id="word" name="word" type="text" value="labor">
             </div>
 
-
-        </div>
-    </form>
+            <button type="submit">Invia</button>
+        </form>
+    </div>
 </body>
 
 </html>
