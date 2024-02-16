@@ -1,6 +1,7 @@
 <?php
 
 $paragraph = $_POST["paragraph"];
+$par_length = strlen(trim($paragraph));
 $word = $_POST["word"];
 
 
@@ -17,8 +18,7 @@ $word = $_POST["word"];
 
     <h3>Ecco il tuo paragrafo:</h3>
     <p><?= $paragraph?></p>
-    <h3>Ecco la tua parola:</h3>
-    <span><?= $word?></span>
+    <span>Lunghezza: <?= $par_length?></span>
 
     
 </body>
